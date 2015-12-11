@@ -17,7 +17,7 @@ module.exports = function exampleData () {
       return {
         id: index + 1,
         text: chance.word(),
-        list_id: _.sample(_.range(1,4))
+        list: _.sample(_.range(1,4))
       };
     })
   };
