@@ -22,7 +22,6 @@ export default Ember.Component.extend({
       var item = this.get('item');
       var list = this.get('list');
 
-
       var newItem = store.createRecord('item', {
         content: item,
         list_id: list.get('id') // how and where camelCase?
