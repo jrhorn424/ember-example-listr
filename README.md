@@ -1,60 +1,24 @@
-![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Ember-starter
+# ember-example-listr-api
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An example list-making app.
 
-## Prerequisites
+## Dependencies
 
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+-   [ember-example-listr-api](https://github.com/jrhorn424/ember-example-listr-api)
+-   [ember](http://emberjs.com)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+1.  Clone this repository.
+1.  Install dependencies with `npm install && bower install`.
+1.  Run the API server with `ember server`.
 
-## Running / Development
+If you want to work with [the API](https://github.com/jrhorn424/ember-example-listr-api), make sure it is up and running and use `ember server --proxy http://localhost:3000`, instead.
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## [License](LICENSE)
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-[License](LICENSE)
-------------------
-
-Source code distributed under the MIT license. Text and other assets copyright
-General Assembly, Inc., all rights reserved.
+Source code distributed under the MIT license. Text licensed under the
+[wtfpl](http://www.wtfpl.net). General Assembly copyright General Assembly,
+Inc., all rights reserved.
