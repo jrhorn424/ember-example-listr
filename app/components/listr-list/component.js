@@ -15,6 +15,23 @@ export default Ember.Component.extend({
         list.toggleProperty('hidden');
         list.save();
       });
+    },
+
+    createNewItem: function () {
+      var store = this.get('store');
+      var item = this.get('item');
+      var listId = this.get('list.id');
+
+      store.findRecord('list', listId).then(function (list) {
+        var newItem = store.createRecord('item', {
+          text: item,
+          list: list
+        });
+
+        newItem.save().then(function () {
+          list.get('items').addObject(newItem).save();
+        });
+      });
     }
   }
 });
