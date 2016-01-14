@@ -20,17 +20,16 @@ export default Ember.Component.extend({
     createNewItem: function () {
       var store = this.get('store');
       var item = this.get('item');
-      var listId = this.get('list.id');
+      var list = this.get('list');
 
-      store.findRecord('list', listId).then(function (list) {
-        var newItem = store.createRecord('item', {
-          text: item,
-          list: list
-        });
 
-        newItem.save().then(function () {
-          list.get('items').addObject(newItem).save();
-        });
+      var newItem = store.createRecord('item', {
+        content: item,
+        list_id: list.get('id') // how and where camelCase?
+      });
+
+      newItem.save().then(function () {
+        list.get('items').addObject(newItem);
       });
     }
   }
